@@ -11,18 +11,19 @@
     <title>@yield('titulo')</title>
   </head>
   <body>
-
-    <nav class="navbar sticky-top navbar-dark bg-primary">
-      <a class="navbar-brand" href="index.html"> <h4>TexHub</h4> </a>
-      <div class="container">
-          @yield('botones')
-      </div>    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">TexHub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        @yield('botones')
+      </div>
     </nav>
 
     <section class="bg-gray">
-        <div class="container">
-            @yield('sec_cont')
-        </div>
+          @yield('sec_cont')
     </section>
 
 
