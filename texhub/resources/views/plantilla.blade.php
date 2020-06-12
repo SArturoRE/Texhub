@@ -13,8 +13,8 @@
   <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">TexHub</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href= @yield('ruta') >TexHub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"  aria-label="Toggle navigation" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -22,9 +22,13 @@
       </div>
     </nav>
 
-    <section class="bg-gray">
-          @yield('sec_cont')
-    </section>
+
+  
+    <div class="container my-4">
+      @yield('sec_cont')
+    </div>
+    
+
 
 
     <!-- Optional JavaScript -->

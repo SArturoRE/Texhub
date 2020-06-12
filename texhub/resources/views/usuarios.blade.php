@@ -1,23 +1,19 @@
 @extends('plantilla')
 
 @section('titulo')
-Biblioteca
-@endsection
-
-@section('ruta')
-/inicio_admin
+Inicio
 @endsection
 
 @section('botones')
 <ul class="navbar-nav">
-    <li class="nav-item">
+<li class="nav-item">
         <a class="nav-link" href="{{ url('/inicio_admin') }}">Inicio <span class="sr-only">(current)</span></a>
     </li>
-    <li class="nav-item active">
-        <a class="nav-link" href="">Biblioteca <span class="sr-only">(current)</span></a>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('/biblio_admin') }}">Biblioteca </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Catalogo</a>
+        <a class="nav-link" href="#">Acerca de</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{ url('/principal') }}">Cerrar Sesion</a>
@@ -28,33 +24,12 @@ Biblioteca
 @section('sec_cont')
 <div class="row">
     <div class="col-12">
-        <h1 class="display-3">Biblioteca Administrador</h1>
+        <h1 class="display-3">Usuarios</h1>
+        <input class="form-control form-control-sm my-3" id="myInput" type="text" onkeyup="filtro()" placeholder="Buscar...">  
     </div>
 </div>
-<div class="container ">
-    <div class="row">
-        <div class="col-auto my-3"> 
-            <form class="form-inline my-1 my-lg-0">    
-                <input class="form-control form-control-sm" id="myInput" type="text" onkeyup="filtro()" placeholder="Buscar...">
-                <br>
-            </form>      
-        </div>
 
-
-        <div class="col-auto my-3">        
-            <h5>Ordenar por: </h5> 
-        </div>
-        
-        <div class="col my-3">
-            <button type="button" class="btn btn-outline-success btn-block btn-sm mx-1">Autor</button>
-        </div>
-        <div class="col my-3">
-            <button type="button" class="btn btn-outline-success btn-block btn-sm mx-1">Articulo</button>
-        </div>
-        <div class="col my-3">
-            <button type="button" class="btn btn-outline-success btn-block btn-sm mx-1">Tema</button>
-        </div>        
-    </div>
+<div class="container">
     <div class="row">
         <div class="table-responsive">
             <table class="table">

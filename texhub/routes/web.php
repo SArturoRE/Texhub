@@ -24,3 +24,27 @@ Route::get('principal', function () {
 Route::get('biblio_admin', function () {
     return view('biblio_admin');
 });
+
+Route::get('inicio_admin', function () {
+    return view('inicio_admin');
+});
+
+Route::get('usuarios', function () {
+    return view('usuarios');
+});
+
+Route::get('articulos', function () {
+    return view('articulos');
+});
+
+Route::get('colaboraciones', function () {
+    return view('colaboraciones');
+});
+
+Route::get('temas', function () {
+    return view('temas');
+});
+
+Route::get('reportes', function () {
+    return view('reportes');
+});
